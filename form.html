@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="24 mars CSS.css" href=" https://fonts.googleapis.com/css?family=Oswald|Noto+Sans" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta charset="utf=8" />
+    <title> Formulaire </title>
+</head>
+
+<body>
+    <fieldset>
+    <img src="R.png">
+    <font color="FFFFFF">
+        <h1 align="center"> Inscrivez-vous. </h1>
+    </font>
+    <form action = "traitement.php" method = "POST" id="myForm">
+            <label for="nom"> Nom </label>
+            <br> <input type="text" name="nom" id="username" size="40"> <br>
+            <span id="error"> </span> </br>
+                    
+                <br> <label for="prenom"> Prénom </label> </td>
+                <br> <input type="text" name="prenom" id="prenom" size="40"> </br> 
+                <span id="error6"> </span> </br>
+                
+                <br> 
+                Sexe 
+                <br> <input type="radio" name="sexe" id="sexe" value="Homme"> Homme <label for="sexe"></label>
+                    <input type="radio" name="sexe" id="sexe" value="Femme"> Femme <label for="sexe"></label>
+                <br> 
+                <div>
+                    </br> <label for="age"> Age </label> </td>
+                    <br> <input type="number" id="age" min="12" max="30" placeholder="18-30" size="40" />
+                </div> <span id="error5"> </span> </br> 
+                
+                <br>
+                    <div>
+                        <td><label for="email"> Adresse mail </label> </td>
+                        <br> <input type="email" name="email" id="Email" size="40" placeholder="ex:random123@esti.mg" /> 
+                    </div>
+                    <span id="error2"> </span> <br> </br>
+                
+                <div>
+                    <label for="pseudo"> Nom d'utilisateur </label>
+                    <br> <input type="text" name="pseudo" id="pseudo" placeholder="ex:indiekid90" size="40" maxlength="12" /> <span id="error4"> </span>
+                </div>
+                
+                </br> 
+                    <div>
+                        <td><label for="pass"> Mot de passe </label></td>
+                        <br> <input type="password" name="pass" id="password" placeholder="obligatoire" size="40" />
+                    </div> <span id="error3"> </span> </br>
+
+                <br>
+                </tr>
+                    <div>
+                        <label for="pays"> Nationalité </label>
+                        <br>
+                            <select name="pays" id="pays">
+                            <option value="français"> Français </option>
+                            <option value="Malagasy"> Malagasy </option>
+                            <option value="autre"> Autre </option>
+                            </select>
+                    </div> </br> 
+                
+                <br>
+                    Parcours souhaitée en info</br> 
+                    <br> <input type="radio" name="parcours" value="IDEV" id="IDEV" />
+                        <label for="IDEV">
+                        IDEV
+                    </label> <input type="radio" name="parcours" value="RSI" id="RSI" />
+                        <label for="RSI"> 
+                        RSI
+                    </label></br>
+                </tr>
+                <br>
+                <input type="submit" value="Enregistrer" onsubmit="validateForm()"/>
+    </form>
+    </fieldset>  
+</body>
+</body>
+<script type="text/javascript" src="form.js"> </script>
+</html>
